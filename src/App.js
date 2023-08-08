@@ -7,7 +7,7 @@ function App() {
   const [weather, setWeather] = useState({});
 
   const search = async (e) => {
-    if (e.key === "Enter") {
+    if (e.key === 13) {
       const data = await fetchWeather(query);
 
       setWeather(data);
